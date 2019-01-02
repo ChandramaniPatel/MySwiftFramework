@@ -10,6 +10,8 @@
 		97BE400321DCA19F0007F373 /* RandomeGenerationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BE3FF921DCA19E0007F373 /* RandomeGenerationFramework.framework */; };
 		97BE400821DCA19F0007F373 /* RandomeGenerationFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE400721DCA19F0007F373 /* RandomeGenerationFrameworkTests.swift */; };
 		97BE400A21DCA19F0007F373 /* RandomeGenerationFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BE3FFC21DCA19E0007F373 /* RandomeGenerationFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97BE401421DCA3330007F373 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE401321DCA3330007F373 /* RandomGenerator.swift */; };
+		97BE401521DCA3340007F373 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BE401321DCA3330007F373 /* RandomGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		97BE400221DCA19F0007F373 /* RandomeGenerationFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomeGenerationFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97BE400721DCA19F0007F373 /* RandomeGenerationFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomeGenerationFrameworkTests.swift; sourceTree = "<group>"; };
 		97BE400921DCA19F0007F373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97BE401321DCA3330007F373 /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				97BE3FFC21DCA19E0007F373 /* RandomeGenerationFramework.h */,
 				97BE3FFD21DCA19E0007F373 /* Info.plist */,
+				97BE401321DCA3330007F373 /* RandomGenerator.swift */,
 			);
 			path = RandomeGenerationFramework;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					97BE3FF821DCA19E0007F373 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					97BE400121DCA19F0007F373 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BE401421DCA3330007F373 /* RandomGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BE401521DCA3340007F373 /* RandomGenerator.swift in Sources */,
 				97BE400821DCA19F0007F373 /* RandomeGenerationFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +348,7 @@
 		97BE400E21DCA19F0007F373 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = CM.RandomeGenerationFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +374,7 @@
 		97BE400F21DCA19F0007F373 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +399,7 @@
 		97BE401121DCA19F0007F373 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomeGenerationFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +417,7 @@
 		97BE401221DCA19F0007F373 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomeGenerationFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

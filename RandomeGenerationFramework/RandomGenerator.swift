@@ -21,6 +21,10 @@ public class RandomGenerator {
     public static func integer() -> Int {
         return Int(arc4random())
     }
+    
+    public static func noRandomGeneration()-> Bool {
+        return true
+    }
 }
 
 
